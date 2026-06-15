@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GrowBand · 日光时间 + 成长曲线</title>
+<title>GrowBand · Daylight + Growth (EN)</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.0.0/dist/tabler-icons.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -225,7 +225,7 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
 </style>
 </head>
 <body>
-<!--lang-switch-bar--><div style="max-width:375px;margin:8px auto 0;display:flex;gap:8px;justify-content:center;font-family:Inter,-apple-system,sans-serif"><a href="index.html" style="font-size:12px;font-weight:600;color:#fff;background:#007aff;padding:5px 16px;border-radius:14px;text-decoration:none">中文</a><a href="en.html" style="font-size:12px;font-weight:600;color:#8e8e93;background:#fff;padding:5px 16px;border-radius:14px;text-decoration:none;border:.5px solid #e0e0e6">English</a></div>
+<!--lang-switch-bar--><div style="max-width:375px;margin:8px auto 0;display:flex;gap:8px;justify-content:center;font-family:Inter,-apple-system,sans-serif"><a href="index.html" style="font-size:12px;font-weight:600;color:#8e8e93;background:#fff;padding:5px 16px;border-radius:14px;text-decoration:none;border:.5px solid #e0e0e6">中文</a><a href="en.html" style="font-size:12px;font-weight:600;color:#fff;background:#007aff;padding:5px 16px;border-radius:14px;text-decoration:none">English</a></div>
 
 
 <div class="phone">
@@ -243,14 +243,14 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
 
       <!-- PAGE 1 -->
       <div class="page on" id="p1">
-        <div class="greet"><p class="g-sub">下午好，家长</p><p class="g-name">Emma 今天<br>状态不错 ☀️</p></div>
+        <div class="greet"><p class="g-sub">Good afternoon</p><p class="g-name">Emma is doing<br>great today ☀️</p></div>
         <div class="card loc-chip" onclick="openMap()" style="cursor:pointer">
           <div class="loc-pulse"></div>
-          <div><p class="loc-name">阳光公园</p><p class="loc-time">3分钟前 · 已在户外 1小时</p></div>
-          <span class="loc-badge">户外中</span>
+          <div><p class="loc-name">Sunny Park</p><p class="loc-time">3 min ago · 1h outdoors</p></div>
+          <span class="loc-badge">Outdoors</span>
           <i class="ti ti-chevron-right" style="font-size:18px;color:#c7c7cc;margin-left:4px"></i>
         </div>
-        <p class="sec-lbl"><span>今日进度</span></p>
+        <p class="sec-lbl"><span>Today</span></p>
         <div class="card ring-card" onclick="openBright()" style="cursor:pointer">
           <div class="rings-wrap">
             <svg class="ring-svg" viewBox="0 0 150 150">
@@ -259,52 +259,52 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
               <circle cx="75" cy="75" r="48" fill="none" stroke="#f2f2f7" stroke-width="10"/>
               <circle cx="75" cy="75" r="48" fill="none" stroke="#34c759" stroke-width="10" stroke-linecap="round" stroke-dasharray="302" stroke-dashoffset="76" transform="rotate(-90 75 75)"/>
               <text x="75" y="71" text-anchor="middle" font-size="20" font-weight="700" fill="#000" font-family="Inter">85%</text>
-              <text x="75" y="86" text-anchor="middle" font-size="10" fill="#8e8e93" font-family="Inter">还差 18 分钟</text>
+              <text x="75" y="86" text-anchor="middle" font-size="10" fill="#8e8e93" font-family="Inter">18 min left</text>
             </svg>
             <div class="ring-info">
-              <div><div class="ri-label"><span class="ri-dot" style="background:#ff9500"></span>日光</div><div class="ri-value">1h 42m</div><div class="ri-sub">目标 2h · <span class="ri-change">+31%</span></div></div>
-              <div><div class="ri-label"><span class="ri-dot" style="background:#34c759"></span>活动</div><div class="ri-value">2h 15m</div><div class="ri-sub">含户外 1h42m · <span class="ri-change">+15%</span></div></div>
+              <div><div class="ri-label"><span class="ri-dot" style="background:#ff9500"></span>Daylight</div><div class="ri-value">1h 42m</div><div class="ri-sub">Goal 2h · <span class="ri-change">+31%</span></div></div>
+              <div><div class="ri-label"><span class="ri-dot" style="background:#34c759"></span>Active</div><div class="ri-value">2h 15m</div><div class="ri-sub">incl. 1h42m outdoors · <span class="ri-change">+15%</span></div></div>
             </div>
           </div>
           <div class="divider"></div>
           <div class="week-row">
-            <div class="week-day"><div class="bar-bg"><div class="bar-act" style="height:36%"></div><div class="bar-sun" style="height:44%"></div></div><span class="day-lbl">一</span></div>
-            <div class="week-day"><div class="bar-bg"><div class="bar-act" style="height:30%"></div><div class="bar-sun" style="height:38%"></div></div><span class="day-lbl">二</span></div>
-            <div class="week-day"><div class="bar-bg"><div class="bar-act" style="height:42%"></div><div class="bar-sun" style="height:50%"></div></div><span class="day-lbl">三</span></div>
-            <div class="week-day"><div class="bar-bg" style="outline:1.5px solid #ff9500;outline-offset:-1px"><div class="bar-act" style="height:28%;background:#a0a0a5"></div><div class="bar-sun" style="height:36%"></div></div><span class="day-lbl today">今</span></div>
-            <div class="week-day"><div class="bar-bg"></div><span class="day-lbl">五</span></div>
-            <div class="week-day"><div class="bar-bg"></div><span class="day-lbl">六</span></div>
-            <div class="week-day"><div class="bar-bg"></div><span class="day-lbl">日</span></div>
+            <div class="week-day"><div class="bar-bg"><div class="bar-act" style="height:36%"></div><div class="bar-sun" style="height:44%"></div></div><span class="day-lbl">M</span></div>
+            <div class="week-day"><div class="bar-bg"><div class="bar-act" style="height:30%"></div><div class="bar-sun" style="height:38%"></div></div><span class="day-lbl">T</span></div>
+            <div class="week-day"><div class="bar-bg"><div class="bar-act" style="height:42%"></div><div class="bar-sun" style="height:50%"></div></div><span class="day-lbl">W</span></div>
+            <div class="week-day"><div class="bar-bg" style="outline:1.5px solid #ff9500;outline-offset:-1px"><div class="bar-act" style="height:28%;background:#a0a0a5"></div><div class="bar-sun" style="height:36%"></div></div><span class="day-lbl today">Now</span></div>
+            <div class="week-day"><div class="bar-bg"></div><span class="day-lbl">F</span></div>
+            <div class="week-day"><div class="bar-bg"></div><span class="day-lbl">S</span></div>
+            <div class="week-day"><div class="bar-bg"></div><span class="day-lbl">S</span></div>
           </div>
         </div>
         <div class="card" onclick="openSleep()" style="padding:13px 16px;display:flex;align-items:center;gap:12px;cursor:pointer">
           <div style="width:38px;height:38px;border-radius:12px;background:#ede7f6;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="ti ti-moon-stars" style="font-size:19px;color:#5e35b1"></i></div>
-          <div><p style="font-size:13px;font-weight:600;color:#000">昨晚睡眠</p><p style="font-size:11px;color:#8e8e93;margin-top:1px">9h20m · 入睡顺畅</p></div>
-          <span style="margin-left:auto;background:#ede7f6;color:#5e35b1;font-size:11px;font-weight:600;padding:4px 10px;border-radius:8px">良好</span>
+          <div><p style="font-size:13px;font-weight:600;color:#000">Last night</p><p style="font-size:11px;color:#8e8e93;margin-top:1px">9h20m · fell asleep easily</p></div>
+          <span style="margin-left:auto;background:#ede7f6;color:#5e35b1;font-size:11px;font-weight:600;padding:4px 10px;border-radius:8px">Good</span>
           <i class="ti ti-chevron-right" style="font-size:18px;color:#c7c7cc"></i>
         </div>
         <div class="card insight">
-          <div class="insight-hdr"><i class="ti ti-sparkles" style="color:#ff9500"></i><span class="insight-hdr-txt" style="color:#ff9500">AI 解读</span></div>
-          <p class="insight-body">下午在公园连续活跃 35 分钟，且全程在户外。户外活动是孩子视力、骨骼和睡眠的日常基础。昨晚入睡也比上周平均早了 15 分钟。</p>
+          <div class="insight-hdr"><i class="ti ti-sparkles" style="color:#ff9500"></i><span class="insight-hdr-txt" style="color:#ff9500">AI insight</span></div>
+          <p class="insight-body">Emma had 35 min of continuous activity at the park this afternoon, all outdoors. Outdoor time supports kids' eyes, bones, and sleep. She also fell asleep 15 min earlier than her weekly average.</p>
         </div>
-        <p class="sec-lbl"><span>今天的故事</span></p>
+        <p class="sec-lbl"><span>Today's story</span></p>
         <div class="card tl">
-          <div class="tl-item"><div class="tl-icon" style="background:#fff8ee"><i class="ti ti-sun" style="color:#e65100"></i></div><div><p class="tl-time">下午 2:45</p><p class="tl-text">日光突破 1.5h，还差 18 分钟达标</p></div></div>
-          <div class="tl-item"><div class="tl-icon" style="background:#e8f8ee"><i class="ti ti-flame" style="color:#2e7d32"></i></div><div><p class="tl-time">下午 2:00 – 2:35</p><p class="tl-text">在公园连续活跃 35 分钟</p><span class="tl-tag" style="background:#e8f8ee;color:#2e7d32">户外 + 运动</span></div></div>
-          <div class="tl-item"><div class="tl-icon" style="background:#ede7f6"><i class="ti ti-moon" style="color:#4527a0"></i></div><div><p class="tl-time">昨晚 9:12</p><p class="tl-text">睡了 9h 20m，入睡顺畅</p><span class="tl-tag" style="background:#ede7f6;color:#4527a0">比前天早睡 20 min</span></div></div>
-          <div class="tl-item"><div class="tl-icon" style="background:#fce8ec"><i class="ti ti-heart" style="color:#c0392b"></i></div><div><p class="tl-time">全天</p><p class="tl-text">心率体温正常</p></div></div>
+          <div class="tl-item"><div class="tl-icon" style="background:#fff8ee"><i class="ti ti-sun" style="color:#e65100"></i></div><div><p class="tl-time">PM 2:45</p><p class="tl-text">Daylight passed 1.5h, 18 min to goal</p></div></div>
+          <div class="tl-item"><div class="tl-icon" style="background:#e8f8ee"><i class="ti ti-flame" style="color:#2e7d32"></i></div><div><p class="tl-time">PM 2:00 – 2:35</p><p class="tl-text">35 min active at the park</p><span class="tl-tag" style="background:#e8f8ee;color:#2e7d32">Outdoor + active</span></div></div>
+          <div class="tl-item"><div class="tl-icon" style="background:#ede7f6"><i class="ti ti-moon" style="color:#4527a0"></i></div><div><p class="tl-time">Last night 9:12</p><p class="tl-text">Slept 9h20m, fell asleep easily</p><span class="tl-tag" style="background:#ede7f6;color:#4527a0">20 min earlier than before</span></div></div>
+          <div class="tl-item"><div class="tl-icon" style="background:#fce8ec"><i class="ti ti-heart" style="color:#c0392b"></i></div><div><p class="tl-time">All day</p><p class="tl-text">Heart rate & temp normal</p></div></div>
         </div>
       </div>
 
       <!-- PAGE 2 -->
       <div class="page" id="p2">
-        <div class="greet"><p class="g-sub">Emma · 7岁 · 佩戴 22 天</p><p class="g-name">成长档案</p></div>
+        <div class="greet"><p class="g-sub">Emma · 7 yo · day 22</p><p class="g-name">Growth profile</p></div>
 
         <div class="holo-card">
           <div class="holo-grid"></div>
           <div class="holo-glow"></div>
           <div class="holo-tag">◈ GROWTH MODEL</div>
-          <div class="holo-note">示意影像 · 非扫描</div>
+          <div class="holo-note">Illustration · not a scan</div>
           <svg class="holo-svg" viewBox="0 0 160 330" fill="none">
             <ellipse cx="80" cy="298" rx="56" ry="12" fill="none" stroke="#4aa3f5" stroke-width="1" opacity="0.28"/>
             <ellipse cx="80" cy="298" rx="40" ry="8.5" fill="none" stroke="#4aa3f5" stroke-width="1" opacity="0.45"/>
@@ -317,24 +317,24 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
             </line>
           </svg>
           <div class="holo-readout">
-            <div class="ho-stat"><div class="ho-lbl">身高</div><div class="ho-val" id="hoH">118.4<span> cm</span></div><div class="ho-pct">P65 · 偏高</div></div>
-            <div class="ho-stat"><div class="ho-lbl">体重</div><div class="ho-val" id="hoW">22.3<span> kg</span></div><div class="ho-pct">P58 · 标准</div></div>
-            <div class="ho-stat"><div class="ho-lbl">BMI</div><div class="ho-val" id="hoB">15.9</div><div class="ho-pct" id="hoBs">正常范围</div></div>
+            <div class="ho-stat"><div class="ho-lbl">Height</div><div class="ho-val" id="hoH">118.4<span> cm</span></div><div class="ho-pct">P65 · above avg</div></div>
+            <div class="ho-stat"><div class="ho-lbl">Weight</div><div class="ho-val" id="hoW">22.3<span> kg</span></div><div class="ho-pct">P58 · normal</div></div>
+            <div class="ho-stat"><div class="ho-lbl">BMI</div><div class="ho-val" id="hoB">15.9</div><div class="ho-pct" id="hoBs">Normal</div></div>
           </div>
         </div>
 
-        <p class="sec-lbl"><span>基础数据</span><span class="edit" onclick="openInput()" style="cursor:pointer"><i class="ti ti-pencil" style="font-size:12px;vertical-align:-1px"></i> 录入</span></p>
+        <p class="sec-lbl"><span>Basic data</span><span class="edit" onclick="openInput()" style="cursor:pointer"><i class="ti ti-pencil" style="font-size:12px;vertical-align:-1px"></i> Edit</span></p>
         <div class="card input-card">
-          <div class="in-item"><div class="in-lbl">身高</div><div class="in-val" id="cardH">118.4<span>cm</span></div><div class="in-manual">手动录入</div></div>
-          <div class="in-item"><div class="in-lbl">体重</div><div class="in-val" id="cardW">22.3<span>kg</span></div><div class="in-manual">手动录入</div></div>
-          <div class="in-item"><div class="in-lbl">上次更新</div><div class="in-val" style="font-size:15px;padding-top:3px">3天前</div><div class="in-meta">建议每月一次</div></div>
+          <div class="in-item"><div class="in-lbl">Height</div><div class="in-val" id="cardH">118.4<span>cm</span></div><div class="in-manual">Manual</div></div>
+          <div class="in-item"><div class="in-lbl">Weight</div><div class="in-val" id="cardW">22.3<span>kg</span></div><div class="in-manual">Manual</div></div>
+          <div class="in-item"><div class="in-lbl">Last update</div><div class="in-val" style="font-size:15px;padding-top:3px">3d ago</div><div class="in-meta">Monthly suggested</div></div>
         </div>
 
         <div class="card curve-card" onclick="openGrowth()" style="cursor:pointer">
-          <div class="curve-hdr"><span class="curve-title">身高成长曲线</span><span style="display:flex;align-items:center;gap:6px"><span class="curve-pct">↑ 6个月 +2.2cm</span><i class="ti ti-chevron-right" style="font-size:16px;color:#c7c7cc"></i></span></div>
+          <div class="curve-hdr"><span class="curve-title">Height growth curve</span><span style="display:flex;align-items:center;gap:6px"><span class="curve-pct">↑ +2.2cm / 6mo</span><i class="ti ti-chevron-right" style="font-size:16px;color:#c7c7cc"></i></span></div>
           <div class="curve-legend">
             <div class="cl-item"><span class="cl-line"></span>Emma</div>
-            <div class="cl-item"><span class="cl-band"></span>同龄 P25–P75 区间</div>
+            <div class="cl-item"><span class="cl-band"></span>Same-age P25–P75</div>
           </div>
           <svg viewBox="0 0 311 150" style="width:100%;height:auto">
             <line x1="34" y1="20" x2="305" y2="20" stroke="#f2f2f7"/>
@@ -349,22 +349,22 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
             <polyline points="44,100 96,92 148,84 200,75 252,62 296,50" fill="none" stroke="#007aff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
             <g fill="#fff" stroke="#007aff" stroke-width="2"><circle cx="44" cy="100" r="3"/><circle cx="96" cy="92" r="3"/><circle cx="148" cy="84" r="3"/><circle cx="200" cy="75" r="3"/><circle cx="252" cy="62" r="3"/></g>
             <circle cx="296" cy="50" r="8" fill="#007aff" opacity="0.15"/><circle cx="296" cy="50" r="4.5" fill="#007aff"/>
-            <text x="44" y="145" text-anchor="middle" font-size="9" fill="#8e8e93">1月</text>
-            <text x="96" y="145" text-anchor="middle" font-size="9" fill="#8e8e93">2月</text>
-            <text x="148" y="145" text-anchor="middle" font-size="9" fill="#8e8e93">3月</text>
-            <text x="200" y="145" text-anchor="middle" font-size="9" fill="#8e8e93">4月</text>
-            <text x="252" y="145" text-anchor="middle" font-size="9" fill="#8e8e93">5月</text>
-            <text x="296" y="145" text-anchor="middle" font-size="9" fill="#007aff" font-weight="600">本月</text>
+            <text x="44" y="145" text-anchor="middle" font-size="9" fill="#8e8e93">Jan</text>
+            <text x="96" y="145" text-anchor="middle" font-size="9" fill="#8e8e93">Feb</text>
+            <text x="148" y="145" text-anchor="middle" font-size="9" fill="#8e8e93">Mar</text>
+            <text x="200" y="145" text-anchor="middle" font-size="9" fill="#8e8e93">Apr</text>
+            <text x="252" y="145" text-anchor="middle" font-size="9" fill="#8e8e93">May</text>
+            <text x="296" y="145" text-anchor="middle" font-size="9" fill="#007aff" font-weight="600">Now</text>
           </svg>
         </div>
 
         <div class="card insight">
-          <div class="insight-hdr"><i class="ti ti-sparkles" style="color:#007aff"></i><span class="insight-hdr-txt" style="color:#007aff">成长输入因子 · 关联度</span></div>
-          <div class="corr-row"><div class="corr-ic" style="background:#fff8ee"><i class="ti ti-sun" style="color:#e65100"></i></div><div><div class="corr-name">户外日光</div><div class="corr-desc">本月日均 1.8h</div></div><div class="corr-bar-wrap"><div class="corr-bar" style="width:88%;background:#ff9500"></div></div><div class="corr-score" style="color:#e65100">强</div></div>
-          <div class="corr-row"><div class="corr-ic" style="background:#e8f8ee"><i class="ti ti-moon" style="color:#2e7d32"></i></div><div><div class="corr-name">睡眠质量</div><div class="corr-desc">本月日均 9.3h</div></div><div class="corr-bar-wrap"><div class="corr-bar" style="width:76%;background:#34c759"></div></div><div class="corr-score" style="color:#2e7d32">强</div></div>
-          <div class="corr-row"><div class="corr-ic" style="background:#e8f0fe"><i class="ti ti-run" style="color:#007aff"></i></div><div><div class="corr-name">日常活动</div><div class="corr-desc">本月日均 2.1h</div></div><div class="corr-bar-wrap"><div class="corr-bar" style="width:64%;background:#007aff"></div></div><div class="corr-score" style="color:#007aff">中</div></div>
-          <p class="corr-summary"><b>本月观察：</b>Emma 户外活跃的日子里，<b>睡眠更稳、入睡也更轻松</b>。日光、活动、睡眠是孩子长好的日常基础——把它们坚持住，帮她充分发挥成长潜力。</p>
-          <p style="font-size:10px;color:#c7c7cc;margin-top:8px;line-height:1.5">* 关联度基于本机数据统计，仅供参考，不构成医学诊断。身高体重以家长录入为准。</p>
+          <div class="insight-hdr"><i class="ti ti-sparkles" style="color:#007aff"></i><span class="insight-hdr-txt" style="color:#007aff">Growth inputs · correlation</span></div>
+          <div class="corr-row"><div class="corr-ic" style="background:#fff8ee"><i class="ti ti-sun" style="color:#e65100"></i></div><div><div class="corr-name">Daylight</div><div class="corr-desc">Daily avg 1.8h</div></div><div class="corr-bar-wrap"><div class="corr-bar" style="width:88%;background:#ff9500"></div></div><div class="corr-score" style="color:#e65100">High</div></div>
+          <div class="corr-row"><div class="corr-ic" style="background:#e8f8ee"><i class="ti ti-moon" style="color:#2e7d32"></i></div><div><div class="corr-name">Sleep quality</div><div class="corr-desc">Daily avg 9.3h</div></div><div class="corr-bar-wrap"><div class="corr-bar" style="width:76%;background:#34c759"></div></div><div class="corr-score" style="color:#2e7d32">High</div></div>
+          <div class="corr-row"><div class="corr-ic" style="background:#e8f0fe"><i class="ti ti-run" style="color:#007aff"></i></div><div><div class="corr-name">Activity</div><div class="corr-desc">Daily avg 2.1h</div></div><div class="corr-bar-wrap"><div class="corr-bar" style="width:64%;background:#007aff"></div></div><div class="corr-score" style="color:#007aff">Med</div></div>
+          <p class="corr-summary"><b>This month: </b>On days Emma is active outdoors, <b>her sleep is steadier and she falls asleep more easily</b>。Daylight, activity, and sleep are the daily foundations for healthy growth — keeping them up helps Emma reach her full potential.</p>
+          <p style="font-size:10px;color:#c7c7cc;margin-top:8px;line-height:1.5">* Correlations are on-device for reference only, not a medical diagnosis. Height & weight rely on parent-entered values.</p>
         </div>
       </div>
 
@@ -375,17 +375,17 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
       <div class="gscroll">
         <div class="ghead">
           <button class="back-btn" onclick="closeGrowth()"><i class="ti ti-chevron-left"></i></button>
-          <div><div class="ghead-t">身高成长曲线</div><div class="ghead-s">对照 WHO 女童标准 · 趋势参考，非医学诊断</div></div>
+          <div><div class="ghead-t">Height growth curve</div><div class="ghead-s">vs WHO girls' standard · trend, not diagnosis</div></div>
         </div>
         <div class="card">
           <div class="chart-hd">
-            <span class="chart-t">近 12 个月</span>
-            <div class="seg"><button class="on">身高</button><button>体重</button></div>
+            <span class="chart-t">Last 12 months</span>
+            <div class="seg"><button class="on">Height</button><button>Weight</button></div>
           </div>
           <svg id="gchart" viewBox="0 0 320 196" style="width:100%;height:auto"></svg>
           <div class="glegend">
             <div class="gli"><span class="gd" style="background:#007aff"></span>Emma</div>
-            <div class="gli"><span style="width:12px;border-top:1.5px dashed #b8c2cf"></span>P50 中位</div>
+            <div class="gli"><span style="width:12px;border-top:1.5px dashed #b8c2cf"></span>P50 median</div>
             <div class="gli"><span class="gband"></span>P15–P85</div>
             <div class="gli"><span style="width:12px;border-top:1px dashed #d8e2ee"></span>P3 / P97</div>
           </div>
@@ -393,18 +393,18 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
         <div class="metrics">
           <div class="m">
             <div class="m-ic" style="background:#e8f0fe"><i class="ti ti-percentage" style="color:#007aff"></i></div>
-            <div class="m-v">P65</div><div class="m-l">当前百分位</div>
+            <div class="m-v">P65</div><div class="m-l">Percentile</div>
           </div>
           <div class="m">
             <div class="m-ic" style="background:#e8f8ee"><i class="ti ti-trending-up" style="color:#1D9E75"></i></div>
-            <div class="m-v">6.2<small> cm/年</small></div><div class="m-l">当前增速</div>
+            <div class="m-v">6.2<small> cm/yr</small></div><div class="m-l">Growth rate</div>
           </div>
           <div class="m">
             <div class="m-ic" style="background:#fff3e0"><i class="ti ti-arrow-big-up-lines" style="color:#e8820b"></i></div>
-            <div class="m-v">162<small>~168</small></div><div class="m-l">预测成年(cm)</div>
+            <div class="m-v">162<small>~168</small></div><div class="m-l">Adult est. (cm)</div>
           </div>
         </div>
-        <div class="rec-lbl">测量记录</div>
+        <div class="rec-lbl">Measurements</div>
         <div class="card" style="padding:4px 16px">
           <div class="rec"><span class="rec-d">06/12</span><span class="rec-h">118.4<small>cm</small></span><span class="rec-p">+0.4 ↑</span></div>
           <div class="rec"><span class="rec-d">05/10</span><span class="rec-h">118.0<small>cm</small></span><span class="rec-p">+0.5 ↑</span></div>
@@ -413,7 +413,7 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
           <div class="rec"><span class="rec-d">02/12</span><span class="rec-h">116.8<small>cm</small></span><span class="rec-p">+0.6 ↑</span></div>
           <div class="rec"><span class="rec-d">01/10</span><span class="rec-h">116.2<small>cm</small></span><span class="rec-p">—</span></div>
         </div>
-        <div class="gnote"><b>关于预测：</b>成年身高预测基于当前百分位趋势与父母身高（中亲法）估算，仅供参考，实际受营养、运动、睡眠、发育节奏等多因素影响，不构成医学诊断。</div>
+        <div class="gnote"><b>About prediction: </b>Adult height is estimated from the current percentile trend and parents' heights (mid-parental method). For reference only; actual height depends on nutrition, activity, sleep, and development pace. Not a medical diagnosis.</div>
       </div>
     </div>
 
@@ -422,19 +422,19 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
       <div class="gscroll">
         <div class="ghead">
           <button class="back-btn" onclick="closeBright()"><i class="ti ti-chevron-left"></i></button>
-          <div><div class="ghead-t">日光与活动</div><div class="ghead-s">今天 · 6月15日</div></div>
+          <div><div class="ghead-t">Daylight & Activity</div><div class="ghead-s">Today · Jun 15</div></div>
         </div>
 
         <div class="card" style="padding:16px">
           <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:14px">
             <div style="width:42px;height:42px;border-radius:13px;background:#fff3e0;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="ti ti-sun" style="font-size:21px;color:#e8820b"></i></div>
-            <div style="flex:1"><p style="font-size:15px;font-weight:700;color:#000">今日自然光</p><p style="font-size:11px;color:#8e8e93;margin-top:1px">户外自然光，非室内屏幕光</p></div>
+            <div style="flex:1"><p style="font-size:15px;font-weight:700;color:#000">Natural light today</p><p style="font-size:11px;color:#8e8e93;margin-top:1px">Outdoor light, not indoor screen light</p></div>
             <span style="font-size:22px;font-weight:700;color:#e8820b">1h42m</span>
           </div>
           <div style="background:#fff8ee;border-radius:14px;padding:12px">
             <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
-              <span style="font-size:12px;font-weight:600;color:#8e8e93">分时段日光</span>
-              <span style="font-size:12px;font-weight:700;color:#e8820b">还差 18 分钟</span>
+              <span style="font-size:12px;font-weight:600;color:#8e8e93">Daylight by time</span>
+              <span style="font-size:12px;font-weight:700;color:#e8820b">18 min left</span>
             </div>
             <div style="position:relative;height:50px;background:#f0f1f4;border-radius:11px;overflow:hidden">
               <div style="position:absolute;top:0;bottom:0;left:16%;width:66%;background:#ffe1a8;opacity:.7"></div>
@@ -443,56 +443,56 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
               <div style="position:absolute;top:14px;height:22px;border-radius:11px;background:#ff9500;left:64%;width:20%"></div>
               <div style="position:absolute;top:5px;bottom:5px;left:85%;width:2px;background:#7a5200"></div>
             </div>
-            <div style="display:flex;justify-content:space-between;font-size:10px;color:#8e8e93;margin-top:6px"><span>8 AM</span><span>中午</span><span>4 PM</span><span>现在</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:10px;color:#8e8e93;margin-top:6px"><span>8 AM</span><span>Noon</span><span>4 PM</span><span>Now</span></div>
             <div style="display:flex;gap:14px;font-size:10px;color:#8e8e93;margin-top:8px">
-              <span style="display:flex;align-items:center;gap:4px"><span style="width:12px;height:8px;border-radius:3px;background:#ffe1a8"></span>阳光强度</span>
-              <span style="display:flex;align-items:center;gap:4px"><span style="width:12px;height:8px;border-radius:3px;background:#ff9500"></span>户外时段</span>
+              <span style="display:flex;align-items:center;gap:4px"><span style="width:12px;height:8px;border-radius:3px;background:#ffe1a8"></span>sun strength</span>
+              <span style="display:flex;align-items:center;gap:4px"><span style="width:12px;height:8px;border-radius:3px;background:#ff9500"></span>Emma outside</span>
             </div>
           </div>
-          <p style="font-size:11px;font-weight:600;color:#8e8e93;margin:14px 0 8px">为什么今天有帮助</p>
+          <p style="font-size:11px;font-weight:600;color:#8e8e93;margin:14px 0 8px">Why it helps today</p>
           <div style="display:flex;gap:8px">
-            <div style="flex:1;background:#fff8ee;border-radius:12px;padding:11px 6px;text-align:center"><i class="ti ti-run" style="font-size:18px;color:#e8820b"></i><p style="font-size:11px;font-weight:600;color:#9a5a00;margin-top:5px">户外玩耍</p></div>
-            <div style="flex:1;background:#fff8ee;border-radius:12px;padding:11px 6px;text-align:center"><i class="ti ti-eye" style="font-size:18px;color:#e8820b"></i><p style="font-size:11px;font-weight:600;color:#9a5a00;margin-top:5px">视力放松</p></div>
-            <div style="flex:1;background:#fff8ee;border-radius:12px;padding:11px 6px;text-align:center"><i class="ti ti-moon-stars" style="font-size:18px;color:#e8820b"></i><p style="font-size:11px;font-weight:600;color:#9a5a00;margin-top:5px">睡眠节律</p></div>
+            <div style="flex:1;background:#fff8ee;border-radius:12px;padding:11px 6px;text-align:center"><i class="ti ti-run" style="font-size:18px;color:#e8820b"></i><p style="font-size:11px;font-weight:600;color:#9a5a00;margin-top:5px">Park play</p></div>
+            <div style="flex:1;background:#fff8ee;border-radius:12px;padding:11px 6px;text-align:center"><i class="ti ti-eye" style="font-size:18px;color:#e8820b"></i><p style="font-size:11px;font-weight:600;color:#9a5a00;margin-top:5px">Eyes rest</p></div>
+            <div style="flex:1;background:#fff8ee;border-radius:12px;padding:11px 6px;text-align:center"><i class="ti ti-moon-stars" style="font-size:18px;color:#e8820b"></i><p style="font-size:11px;font-weight:600;color:#9a5a00;margin-top:5px">Sleep rhythm</p></div>
           </div>
-          <div style="background:#fff8ee;border-radius:12px;padding:11px 13px;margin-top:12px;font-size:12px;color:#9a5a00;line-height:1.6"><i class="ti ti-sparkles" style="color:#e8820b;margin-right:4px"></i>今天大部分光照来自阳光公园，而非室内屏幕。再有 18 分钟户外就达标了。</div>
+          <div style="background:#fff8ee;border-radius:12px;padding:11px 13px;margin-top:12px;font-size:12px;color:#9a5a00;line-height:1.6"><i class="ti ti-sparkles" style="color:#e8820b;margin-right:4px"></i>Most light came from Sunny Park this afternoon, not indoor screen light. 18 more min outside completes today.</div>
 
           <div style="border-top:.5px solid #f4f4f6;margin-top:14px;padding-top:14px">
-            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px"><span style="font-size:12px;font-weight:600;color:#8e8e93">有效光照分级</span><span style="font-size:10px;color:#c7c7cc">按光照强度 lux · 护眼关键看强光</span></div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px"><span style="font-size:12px;font-weight:600;color:#8e8e93">Effective light levels</span><span style="font-size:10px;color:#c7c7cc">By intensity (lux) · bright light protects eyes</span></div>
             <div style="display:flex;height:12px;border-radius:6px;overflow:hidden;margin-bottom:10px">
               <div style="width:30%;background:#ff9500"></div><div style="width:38%;background:#ffc266"></div><div style="width:32%;background:#dfe4ea"></div>
             </div>
             <div style="display:flex;flex-direction:column;gap:8px">
-              <div style="display:flex;align-items:center;font-size:12px"><span style="width:9px;height:9px;border-radius:50%;background:#ff9500;margin-right:7px;flex-shrink:0"></span><span style="color:#3a3a3c">户外强光 <span style="color:#8e8e93">&gt;10000 lux · 护眼</span></span><span style="margin-left:auto;font-weight:700;color:#000">1h42m</span></div>
-              <div style="display:flex;align-items:center;font-size:12px"><span style="width:9px;height:9px;border-radius:50%;background:#ffc266;margin-right:7px;flex-shrink:0"></span><span style="color:#3a3a3c">室内明亮 <span style="color:#8e8e93">500–1000 lux</span></span><span style="margin-left:auto;font-weight:700;color:#000">2h10m</span></div>
-              <div style="display:flex;align-items:center;font-size:12px"><span style="width:9px;height:9px;border-radius:50%;background:#cfd6df;margin-right:7px;flex-shrink:0"></span><span style="color:#3a3a3c">昏暗 / 屏幕光 <span style="color:#8e8e93">&lt;500 lux</span></span><span style="margin-left:auto;font-weight:700;color:#000">3h05m</span></div>
+              <div style="display:flex;align-items:center;font-size:12px"><span style="width:9px;height:9px;border-radius:50%;background:#ff9500;margin-right:7px;flex-shrink:0"></span><span style="color:#3a3a3c">Outdoor bright <span style="color:#8e8e93">&gt;10000 lux · eye care</span></span><span style="margin-left:auto;font-weight:700;color:#000">1h42m</span></div>
+              <div style="display:flex;align-items:center;font-size:12px"><span style="width:9px;height:9px;border-radius:50%;background:#ffc266;margin-right:7px;flex-shrink:0"></span><span style="color:#3a3a3c">Indoor bright <span style="color:#8e8e93">500–1000 lux</span></span><span style="margin-left:auto;font-weight:700;color:#000">2h10m</span></div>
+              <div style="display:flex;align-items:center;font-size:12px"><span style="width:9px;height:9px;border-radius:50%;background:#cfd6df;margin-right:7px;flex-shrink:0"></span><span style="color:#3a3a3c">Dim / screen light <span style="color:#8e8e93">&lt;500 lux</span></span><span style="margin-left:auto;font-weight:700;color:#000">3h05m</span></div>
             </div>
           </div>
 
           <div style="border-top:.5px solid #f4f4f6;margin-top:14px;padding-top:14px">
-            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px"><span style="font-size:12px;font-weight:600;color:#8e8e93">近 7 天日光</span><span style="font-size:11px;font-weight:600;color:#e8820b"><i class="ti ti-flame" style="vertical-align:-1px"></i> 连续达标 4 天 · 本周 5/7</span></div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px"><span style="font-size:12px;font-weight:600;color:#8e8e93">Last 7 days</span><span style="font-size:11px;font-weight:600;color:#e8820b"><i class="ti ti-flame" style="vertical-align:-1px"></i> 4-day streak · 5/7 this week</span></div>
             <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:6px;height:60px">
-              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:88%;background:#ff9500;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">一</span></div>
-              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:62%;background:#ffd9a0;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">二</span></div>
-              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:100%;background:#ff9500;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">三</span></div>
-              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:84%;background:#ff9500;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">四</span></div>
-              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:55%;background:#ffd9a0;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">五</span></div>
-              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:94%;background:#ff9500;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">六</span></div>
-              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:85%;background:#ff7a00;border-radius:5px"></div><span style="font-size:10px;color:#e8820b;font-weight:700">今</span></div>
+              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:88%;background:#ff9500;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">M</span></div>
+              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:62%;background:#ffd9a0;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">T</span></div>
+              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:100%;background:#ff9500;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">W</span></div>
+              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:84%;background:#ff9500;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">T</span></div>
+              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:55%;background:#ffd9a0;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">F</span></div>
+              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:94%;background:#ff9500;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">S</span></div>
+              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:85%;background:#ff7a00;border-radius:5px"></div><span style="font-size:10px;color:#e8820b;font-weight:700">Now</span></div>
             </div>
-            <p style="font-size:11px;color:#8e8e93;margin-top:10px">本周日均 1h48m · 达标目标 2h</p>
+            <p style="font-size:11px;color:#8e8e93;margin-top:10px">Weekly avg 1h48m · goal 2h</p>
           </div>
         </div>
 
         <div class="card" style="padding:16px">
           <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:14px">
             <div style="width:42px;height:42px;border-radius:13px;background:#e8f8ee;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="ti ti-flame" style="font-size:21px;color:#2e7d32"></i></div>
-            <div style="flex:1"><p style="font-size:15px;font-weight:700;color:#000">高强度户外活跃</p><p style="font-size:11px;color:#8e8e93;margin-top:1px">活跃集中在阳光公园</p></div>
+            <div style="flex:1"><p style="font-size:15px;font-weight:700;color:#000">Strong outdoor play</p><p style="font-size:11px;color:#8e8e93;margin-top:1px">Activity clustered at Sunny Park</p></div>
             <span style="font-size:22px;font-weight:700;color:#2e7d32">2h15m</span>
           </div>
           <div style="background:#f6f7f9;border-radius:14px;padding:12px">
             <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
-              <span style="font-size:11px;font-weight:600;color:#8e8e93;letter-spacing:.5px">活跃时段</span>
+              <span style="font-size:11px;font-weight:600;color:#8e8e93;letter-spacing:.5px">Active window</span>
               <span style="font-size:14px;font-weight:700;color:#000">2:00 - 2:35 PM</span>
             </div>
             <div style="position:relative;height:44px;background:#eceef1;border-radius:11px;overflow:hidden">
@@ -501,24 +501,24 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
             <div style="display:flex;justify-content:space-between;font-size:10px;color:#8e8e93;margin-top:6px"><span>10 AM</span><span>2 PM</span><span>6 PM</span></div>
           </div>
           <div style="border-top:.5px solid #f4f4f6;margin-top:14px;padding-top:14px">
-            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px"><span style="font-size:12px;font-weight:600;color:#8e8e93">活动强度分层</span><span style="font-size:10px;color:#c7c7cc">WHO 建议中高强度 60 分/天</span></div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px"><span style="font-size:12px;font-weight:600;color:#8e8e93">Activity intensity</span><span style="font-size:10px;color:#c7c7cc">WHO WHO: 60 min MVPA/day</span></div>
             <div style="display:flex;height:12px;border-radius:6px;overflow:hidden;margin-bottom:10px">
               <div style="width:36%;background:#2e7d32"></div><div style="width:44%;background:#7cc47f"></div><div style="width:20%;background:#dfe4ea"></div>
             </div>
             <div style="display:flex;flex-direction:column;gap:8px">
-              <div style="display:flex;align-items:center;font-size:12px"><span style="width:9px;height:9px;border-radius:50%;background:#2e7d32;margin-right:7px;flex-shrink:0"></span><span style="color:#3a3a3c">中高强度 <span style="color:#8e8e93">MVPA</span></span><span style="margin-left:auto;font-weight:700;color:#000">48m</span><span style="margin-left:8px;font-size:10px;font-weight:600;color:#1D9E75;background:#e8f8ee;padding:1px 6px;border-radius:6px">已达标</span></div>
-              <div style="display:flex;align-items:center;font-size:12px"><span style="width:9px;height:9px;border-radius:50%;background:#7cc47f;margin-right:7px;flex-shrink:0"></span><span style="color:#3a3a3c">轻度活动</span><span style="margin-left:auto;font-weight:700;color:#000">1h27m</span></div>
-              <div style="display:flex;align-items:center;font-size:12px"><span style="width:9px;height:9px;border-radius:50%;background:#cfd6df;margin-right:7px;flex-shrink:0"></span><span style="color:#3a3a3c">安静时间 <span style="color:#8e8e93">上课·吃饭·阅读</span></span><span style="margin-left:auto;font-weight:700;color:#000">5h10m</span></div>
+              <div style="display:flex;align-items:center;font-size:12px"><span style="width:9px;height:9px;border-radius:50%;background:#2e7d32;margin-right:7px;flex-shrink:0"></span><span style="color:#3a3a3c">Moderate-vigorous <span style="color:#8e8e93">MVPA</span></span><span style="margin-left:auto;font-weight:700;color:#000">48m</span><span style="margin-left:8px;font-size:10px;font-weight:600;color:#1D9E75;background:#e8f8ee;padding:1px 6px;border-radius:6px">on track</span></div>
+              <div style="display:flex;align-items:center;font-size:12px"><span style="width:9px;height:9px;border-radius:50%;background:#7cc47f;margin-right:7px;flex-shrink:0"></span><span style="color:#3a3a3c">Light activity</span><span style="margin-left:auto;font-weight:700;color:#000">1h27m</span></div>
+              <div style="display:flex;align-items:center;font-size:12px"><span style="width:9px;height:9px;border-radius:50%;background:#cfd6df;margin-right:7px;flex-shrink:0"></span><span style="color:#3a3a3c">Quiet time <span style="color:#8e8e93">class · meals · reading</span></span><span style="margin-left:auto;font-weight:700;color:#000">5h10m</span></div>
             </div>
           </div>
 
           <div style="display:flex;gap:8px;border-top:.5px solid #f4f4f6;margin-top:14px;padding-top:14px">
-            <div style="flex:1;background:#f6f7f9;border-radius:12px;padding:10px;text-align:center"><p style="font-size:10px;color:#8e8e93">步数</p><p style="font-size:16px;font-weight:700;color:#000;margin-top:2px">8,420</p></div>
-            <div style="flex:1;background:#f6f7f9;border-radius:12px;padding:10px;text-align:center"><p style="font-size:10px;color:#8e8e93">距离</p><p style="font-size:16px;font-weight:700;color:#000;margin-top:2px">3.1<span style="font-size:11px;color:#8e8e93">km</span></p></div>
-            <div style="flex:1;background:#f6f7f9;border-radius:12px;padding:10px;text-align:center"><p style="font-size:10px;color:#8e8e93">户外占比</p><p style="font-size:16px;font-weight:700;color:#1D9E75;margin-top:2px">76<span style="font-size:11px;color:#8e8e93">%</span></p></div>
+            <div style="flex:1;background:#f6f7f9;border-radius:12px;padding:10px;text-align:center"><p style="font-size:10px;color:#8e8e93">Steps</p><p style="font-size:16px;font-weight:700;color:#000;margin-top:2px">8,420</p></div>
+            <div style="flex:1;background:#f6f7f9;border-radius:12px;padding:10px;text-align:center"><p style="font-size:10px;color:#8e8e93">Distance</p><p style="font-size:16px;font-weight:700;color:#000;margin-top:2px">3.1<span style="font-size:11px;color:#8e8e93">km</span></p></div>
+            <div style="flex:1;background:#f6f7f9;border-radius:12px;padding:10px;text-align:center"><p style="font-size:10px;color:#8e8e93">% outdoors</p><p style="font-size:16px;font-weight:700;color:#1D9E75;margin-top:2px">76<span style="font-size:11px;color:#8e8e93">%</span></p></div>
           </div>
 
-          <div style="background:#f6f7f9;border-radius:12px;padding:11px 13px;margin-top:12px;font-size:12px;color:#3a3a3c;line-height:1.6"><i class="ti ti-clock" style="color:#8e8e93;margin-right:4px"></i>下午有一次高强度活跃，是好现象，无需担心。</div>
+          <div style="background:#f6f7f9;border-radius:12px;padding:11px 13px;margin-top:12px;font-size:12px;color:#3a3a3c;line-height:1.6"><i class="ti ti-clock" style="color:#8e8e93;margin-right:4px"></i>One strong play window this afternoon. Good context, not a warning.</div>
         </div>
       </div>
     </div>
@@ -528,12 +528,12 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
       <div class="gscroll">
         <div class="ghead">
           <button class="back-btn" onclick="closeSleep()"><i class="ti ti-chevron-left"></i></button>
-          <div><div class="ghead-t">睡眠详情</div><div class="ghead-s">昨晚 · 6月14日 周六</div></div>
+          <div><div class="ghead-t">Sleep detail</div><div class="ghead-s">Last night · Sat, Jun 14</div></div>
         </div>
 
         <div class="card" style="padding:16px">
           <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:14px">
-            <span style="font-size:13px;font-weight:600;color:#8e8e93">总睡眠时长</span>
+            <span style="font-size:13px;font-weight:600;color:#8e8e93">Total sleep</span>
             <span style="font-size:24px;font-weight:700;color:#000">9<span style="font-size:14px;color:#8e8e93">h</span>20<span style="font-size:14px;color:#8e8e93">m</span></span>
           </div>
           <div style="display:flex;height:46px;border-radius:10px;overflow:hidden">
@@ -543,37 +543,37 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
             <div style="width:10%;background:#f3d9f0"></div>
           </div>
           <div style="display:flex;justify-content:space-between;font-size:11px;color:#8e8e93;margin-top:6px">
-            <span>晚 8:48 入睡</span><span>早 6:08 醒</span>
+            <span>Asleep 8:48 PM</span><span>Awake 6:08 AM</span>
           </div>
           <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:12px;font-size:11px;color:#8e8e93">
-            <span style="display:flex;align-items:center;gap:4px"><span style="width:9px;height:9px;border-radius:50%;background:#5e35b1"></span>深睡 26%</span>
-            <span style="display:flex;align-items:center;gap:4px"><span style="width:9px;height:9px;border-radius:50%;background:#7e57c2"></span>浅睡 42%</span>
+            <span style="display:flex;align-items:center;gap:4px"><span style="width:9px;height:9px;border-radius:50%;background:#5e35b1"></span>Deep 26%</span>
+            <span style="display:flex;align-items:center;gap:4px"><span style="width:9px;height:9px;border-radius:50%;background:#7e57c2"></span>Light 42%</span>
             <span style="display:flex;align-items:center;gap:4px"><span style="width:9px;height:9px;border-radius:50%;background:#b39ddb"></span>REM 22%</span>
-            <span style="display:flex;align-items:center;gap:4px"><span style="width:9px;height:9px;border-radius:50%;background:#f3d9f0"></span>清醒 10%</span>
+            <span style="display:flex;align-items:center;gap:4px"><span style="width:9px;height:9px;border-radius:50%;background:#f3d9f0"></span>Awake 10%</span>
           </div>
         </div>
 
         <div class="metrics">
-          <div class="m"><div class="m-ic" style="background:#ede7f6"><i class="ti ti-bed" style="color:#5e35b1"></i></div><div class="m-v">12<small> 分</small></div><div class="m-l">入睡用时</div></div>
-          <div class="m"><div class="m-ic" style="background:#ede7f6"><i class="ti ti-zzz" style="color:#5e35b1"></i></div><div class="m-v">2.4<small> h</small></div><div class="m-l">深睡时长</div></div>
-          <div class="m"><div class="m-ic" style="background:#ede7f6"><i class="ti ti-eye" style="color:#5e35b1"></i></div><div class="m-v">2<small> 次</small></div><div class="m-l">夜间醒来</div></div>
+          <div class="m"><div class="m-ic" style="background:#ede7f6"><i class="ti ti-bed" style="color:#5e35b1"></i></div><div class="m-v">12<small> min</small></div><div class="m-l">Time to sleep</div></div>
+          <div class="m"><div class="m-ic" style="background:#ede7f6"><i class="ti ti-zzz" style="color:#5e35b1"></i></div><div class="m-v">2.4<small> h</small></div><div class="m-l">Deep sleep</div></div>
+          <div class="m"><div class="m-ic" style="background:#ede7f6"><i class="ti ti-eye" style="color:#5e35b1"></i></div><div class="m-v">2<small> x</small></div><div class="m-l">Night wakes</div></div>
         </div>
 
-        <div class="rec-lbl">近 7 天睡眠</div>
+        <div class="rec-lbl">Last 7 days</div>
         <div class="card" style="padding:16px 14px">
           <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:6px;height:90px">
-            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:72%;background:#d1c4e9;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">一</span></div>
-            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:80%;background:#d1c4e9;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">二</span></div>
-            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:68%;background:#d1c4e9;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">三</span></div>
-            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:84%;background:#d1c4e9;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">四</span></div>
-            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:78%;background:#d1c4e9;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">五</span></div>
-            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:88%;background:#d1c4e9;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">六</span></div>
-            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:93%;background:#5e35b1;border-radius:5px"></div><span style="font-size:10px;color:#5e35b1;font-weight:700">今</span></div>
+            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:72%;background:#d1c4e9;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">M</span></div>
+            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:80%;background:#d1c4e9;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">T</span></div>
+            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:68%;background:#d1c4e9;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">W</span></div>
+            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:84%;background:#d1c4e9;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">T</span></div>
+            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:78%;background:#d1c4e9;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">F</span></div>
+            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:88%;background:#d1c4e9;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">S</span></div>
+            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:93%;background:#5e35b1;border-radius:5px"></div><span style="font-size:10px;color:#5e35b1;font-weight:700">Now</span></div>
           </div>
-          <p style="font-size:12px;color:#5e35b1;font-weight:600;margin-top:12px">本周日均 9h05m · 比上周多 18 分钟</p>
+          <p style="font-size:12px;color:#5e35b1;font-weight:600;margin-top:12px">Weekly avg 9h05m · +18 min vs last week</p>
         </div>
 
-        <div class="gnote" style="background:#f3f0fa;color:#5e3aa0"><b>温和提示：</b>充足睡眠是孩子成长的重要基础（生长激素多在深睡分泌）。Emma 近期睡眠稳定，无需担心。仅作记录参考，不构成医学诊断。</div>
+        <div class="gnote" style="background:#f3f0fa;color:#5e3aa0"><b>Gentle note: </b>Good sleep is a key foundation for growth (growth hormone is mostly released during deep sleep). Emma's sleep has been stable lately — nothing to worry about. For reference only, not a medical diagnosis.</div>
       </div>
     </div>
 
@@ -581,10 +581,10 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
     <div class="inputmask" id="inputM" onclick="if(event.target===this)closeInput()">
       <div class="inputsheet">
         <div class="is-grab"></div>
-        <div class="is-title">录入身高体重</div>
-        <div class="is-sub">建议每月测量一次 · 数据仅本机保存</div>
+        <div class="is-title">Enter height & weight</div>
+        <div class="is-sub">Measure monthly · stored on device only</div>
         <div class="is-row">
-          <span class="is-label"><i class="ti ti-ruler-2" style="font-size:17px;vertical-align:-3px;margin-right:6px;color:#007aff"></i>身高</span>
+          <span class="is-label"><i class="ti ti-ruler-2" style="font-size:17px;vertical-align:-3px;margin-right:6px;color:#007aff"></i>Height</span>
           <div class="stepper">
             <button class="st-btn" onclick="stepH(-0.5)">−</button>
             <div><input class="st-input" id="ihVal" type="number" step="0.5" value="118.4" inputmode="decimal" oninput="onTypeH(this.value)"><span class="st-unit">cm</span></div>
@@ -592,14 +592,14 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
           </div>
         </div>
         <div class="is-row">
-          <span class="is-label"><i class="ti ti-weight" style="font-size:17px;vertical-align:-3px;margin-right:6px;color:#007aff"></i>体重</span>
+          <span class="is-label"><i class="ti ti-weight" style="font-size:17px;vertical-align:-3px;margin-right:6px;color:#007aff"></i>Weight</span>
           <div class="stepper">
             <button class="st-btn" onclick="stepW(-0.1)">−</button>
             <div><input class="st-input" id="iwVal" type="number" step="0.1" value="22.3" inputmode="decimal" oninput="onTypeW(this.value)"><span class="st-unit">kg</span></div>
             <button class="st-btn" onclick="stepW(0.1)">+</button>
           </div>
         </div>
-        <button class="is-save" onclick="saveInput()">保存</button>
+        <button class="is-save" onclick="saveInput()">Save</button>
       </div>
     </div>
 
@@ -607,7 +607,7 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
     <div class="mapoverlay" id="mapO">
       <div class="map-head">
         <button class="back-btn" onclick="closeMap()"><i class="ti ti-chevron-left"></i></button>
-        <div><div class="map-title">实时位置</div><div class="map-sub">最近更新 · 3分钟前</div></div>
+        <div><div class="map-title">Live location</div><div class="map-sub">Updated 3 min ago</div></div>
       </div>
       <div class="map-area">
         <svg viewBox="0 0 375 470" preserveAspectRatio="xMidYMid slice">
@@ -633,21 +633,21 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
           <rect x="150" y="135" width="125" height="100" rx="14" fill="#cdeccf"/>
           <path d="M165 220 Q200 150 260 165" stroke="#a9dcab" stroke-width="3" fill="none"/>
           <circle cx="180" cy="155" r="7" fill="#a9dcab"/><circle cx="248" cy="210" r="6" fill="#a9dcab"/>
-          <text x="212" y="130" text-anchor="middle" font-size="11" font-weight="600" fill="#1D9E75" font-family="Inter">阳光公园</text>
+          <text x="212" y="130" text-anchor="middle" font-size="11" font-weight="600" fill="#1D9E75" font-family="Inter">Sunny Park</text>
           <circle cx="203" cy="183" r="92" fill="rgba(29,158,117,0.08)" stroke="#1D9E75" stroke-width="2" stroke-dasharray="7 6"/>
-          <text x="203" y="98" text-anchor="middle" font-size="10" font-weight="600" fill="#1D9E75" font-family="Inter" opacity="0.9">安全区 · 半径 200m</text>
+          <text x="203" y="98" text-anchor="middle" font-size="10" font-weight="600" fill="#1D9E75" font-family="Inter" opacity="0.9">Safe zone · 200m radius</text>
           <polyline points="64,415 110,400 138,360 150,300 176,250 195,205" fill="none" stroke="#007aff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 7"/>
           <circle cx="64" cy="415" r="9" fill="#fff" stroke="#8e8e93" stroke-width="2"/>
           <g transform="translate(64,415)"><path d="M-4 1 L0 -4 L4 1 L4 5 L-4 5 Z" fill="#8e8e93"/></g>
-          <text x="64" y="438" text-anchor="middle" font-size="9" fill="#6b7280" font-family="Inter">家 · 8:20</text>
+          <text x="64" y="438" text-anchor="middle" font-size="9" fill="#6b7280" font-family="Inter">Home · 8:20</text>
           <circle cx="138" cy="360" r="4" fill="#007aff"/>
           <circle cx="150" cy="300" r="4" fill="#007aff"/>
           <circle cx="176" cy="250" r="4" fill="#007aff"/>
         </svg>
         <div class="map-legend">
-          <div class="lg-item"><span class="lg-dot" style="background:#34c759"></span>当前位置</div>
-          <div class="lg-item"><span class="lg-line"></span>移动轨迹</div>
-          <div class="lg-item"><span class="lg-fence"></span>电子围栏</div>
+          <div class="lg-item"><span class="lg-dot" style="background:#34c759"></span>Current</div>
+          <div class="lg-item"><span class="lg-line"></span>Route</div>
+          <div class="lg-item"><span class="lg-fence"></span>Geofence</div>
         </div>
         <div class="live-pulse"></div>
         <div class="live-pin">
@@ -658,27 +658,27 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
         <div class="sheet-grab"></div>
         <div class="sheet-top">
           <div class="sheet-ic"><i class="ti ti-map-pin"></i></div>
-          <div><div class="sheet-name">阳光公园</div><div class="sheet-addr">朝阳区望京西路 · 距家 1.2km</div></div>
-          <div class="sheet-safe"><i class="ti ti-shield-check" style="font-size:13px"></i>区域内</div>
+          <div><div class="sheet-name">Sunny Park</div><div class="sheet-addr">Wangjing West Rd · 1.2km from home</div></div>
+          <div class="sheet-safe"><i class="ti ti-shield-check" style="font-size:13px"></i>In zone</div>
         </div>
         <div class="stat3">
-          <div class="s3"><div class="s3-l">今日户外</div><div class="s3-v grn">1h42m</div></div>
-          <div class="s3"><div class="s3-l">移动距离</div><div class="s3-v">2.4km</div></div>
-          <div class="s3"><div class="s3-l">当前状态</div><div class="s3-v grn">户外中</div></div>
+          <div class="s3"><div class="s3-l">Outdoor today</div><div class="s3-v grn">1h42m</div></div>
+          <div class="s3"><div class="s3-l">Distance</div><div class="s3-v">2.4km</div></div>
+          <div class="s3"><div class="s3-l">Status</div><div class="s3-v grn">Outdoors</div></div>
         </div>
-        <div class="track-lbl">今日轨迹</div>
+        <div class="track-lbl">Today's route</div>
         <div class="track">
-          <div class="tk done"><div class="tk-dot"><i class="ti ti-home"></i></div><div class="tk-time">8:20</div><div class="tk-place">家</div></div>
-          <div class="tk done"><div class="tk-dot"><i class="ti ti-school"></i></div><div class="tk-time">8:50</div><div class="tk-place">学校</div></div>
-          <div class="tk done"><div class="tk-dot"><i class="ti ti-tree"></i></div><div class="tk-time">10:15</div><div class="tk-place">花园</div></div>
-          <div class="tk now"><div class="tk-dot"><i class="ti ti-map-pin"></i></div><div class="tk-time">14:00</div><div class="tk-place">公园</div></div>
+          <div class="tk done"><div class="tk-dot"><i class="ti ti-home"></i></div><div class="tk-time">8:20</div><div class="tk-place">Home</div></div>
+          <div class="tk done"><div class="tk-dot"><i class="ti ti-school"></i></div><div class="tk-time">8:50</div><div class="tk-place">School</div></div>
+          <div class="tk done"><div class="tk-dot"><i class="ti ti-tree"></i></div><div class="tk-time">10:15</div><div class="tk-place">Garden</div></div>
+          <div class="tk now"><div class="tk-dot"><i class="ti ti-map-pin"></i></div><div class="tk-time">14:00</div><div class="tk-place">Park</div></div>
         </div>
       </div>
     </div>
 
     <div class="tabbar">
-      <button class="tab sun on" id="t1" onclick="go(1)"><i class="ti ti-sun"></i><span>日光时间</span></button>
-      <button class="tab grow" id="t2" onclick="go(2)"><i class="ti ti-chart-dots"></i><span>成长曲线</span></button>
+      <button class="tab sun on" id="t1" onclick="go(1)"><i class="ti ti-sun"></i><span>Daylight</span></button>
+      <button class="tab grow" id="t2" onclick="go(2)"><i class="ti ti-chart-dots"></i><span>Growth</span></button>
     </div>
     <div class="home-ind"></div>
   </div>
@@ -693,7 +693,7 @@ function interp(ctrl){return function(y){
   return ctrl[ctrl.length-1][1];
 };}
 
-var widthScale=1.0;  /* 体重驱动胖瘦 */
+var widthScale=1.0;  /* Weightdrives build */
 function renderBody(){
   var g=document.getElementById('cloud1');
   if(!g) return;
@@ -748,7 +748,7 @@ function applyBody(){
   if(bs) bs.setAttribute('transform','translate(80 256) scale(1 '+sy.toFixed(3)+') translate(-80 -256)');
   renderBody();
   var b=bmi(bodyH,bodyW);
-  var bstat = b<14?'偏瘦':(b<18?'正常范围':'偏重');
+  var bstat = b<14?'Underweight':(b<18?'Normal':'Heavy');
   document.getElementById('cardH').innerHTML=bodyH.toFixed(1)+'<span>cm</span>';
   document.getElementById('cardW').innerHTML=bodyW.toFixed(1)+'<span>kg</span>';
   document.getElementById('hoH').innerHTML=bodyH.toFixed(1)+'<span> cm</span>';
@@ -793,7 +793,7 @@ function renderGChart(){
     if(j===N-1){svg.appendChild(el('circle',{cx:xOf(j),cy:yOf(child[j]),r:8,fill:'#007aff',opacity:0.15}));svg.appendChild(el('circle',{cx:xOf(j),cy:yOf(child[j]),r:4.5,fill:'#007aff'}));}
     else if(j%2===0){svg.appendChild(el('circle',{cx:xOf(j),cy:yOf(child[j]),r:3,fill:'#fff',stroke:'#007aff','stroke-width':2}));}
   }
-  var mon=['7月','','9月','','11月','','1月','','3月','','5月','本月'];
+  var mon=['Jul','','Sep','','Nov','','Jan','','Mar','','May','Now'];
   for(var x=0;x<N;x++){if(!mon[x])continue;var tx=el('text',{x:xOf(x),y:182,'text-anchor':'middle','font-size':9,fill:x===N-1?'#007aff':'#8e8e93','font-family':'Inter','font-weight':x===N-1?'600':'400'});tx.textContent=mon[x];svg.appendChild(tx);}
 }
 function toggleHelp(){var b=document.getElementById('helpBody'),c=document.getElementById('helpChev');var open=b.style.display==='flex';b.style.display=open?'none':'flex';if(c)c.style.transform=open?'':'rotate(180deg)';}
