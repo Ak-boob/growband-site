@@ -70,6 +70,31 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
 .tl-text{font-size:13px;color:#3a3a3c;line-height:1.5}
 .tl-tag{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:6px;margin-top:3px}
 
+/* ===== Sunlight dose (home hero) ===== */
+.dose-card{padding:16px;cursor:pointer}
+.dose-top{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.dose-ic{width:40px;height:40px;border-radius:12px;background:#fff3e0;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.dose-ic i{font-size:21px;color:#e8820b}
+.dose-st{font-size:16px;font-weight:700;color:#1D9E75}
+.dose-sub{font-size:11px;color:#8e8e93;margin-top:1px}
+.dose-track{height:14px;border-radius:8px;display:flex;overflow:hidden;position:relative;margin:0 2px}
+.dose-track .z1{flex:1;background:#e7e2d8}
+.dose-track .z2{flex:1.3;background:#9ed884}
+.dose-track .z3{flex:1;background:#f3b6a0}
+.dose-marker{position:absolute;top:-5px;left:46%;width:4px;height:24px;border-radius:2px;background:#3a2c18}
+.dose-tl{display:flex;justify-content:space-between;padding:6px 2px 0;font-size:10px;color:#a99}
+.dose-tl .mid{color:#2e7d32;font-weight:700}
+.dose-two{display:flex;gap:10px;margin-top:14px}
+.dose-box{flex:1;border-radius:12px;padding:11px 12px}
+.dose-bl{display:flex;align-items:center;gap:5px;font-size:11px;font-weight:600}
+.dose-bv{font-size:18px;font-weight:700;color:#000;margin-top:3px}
+.dose-bv span{font-size:11px;color:#8e8e93;font-weight:500}
+.dose-bm{font-size:10px;margin-top:0}
+.dose-nudge{background:#fff4e8;border-radius:12px;padding:11px 13px;margin-top:12px;display:flex;gap:9px;align-items:flex-start}
+.dose-nudge i{font-size:17px;color:#e8820b;flex-shrink:0;margin-top:1px}
+.dose-nt{font-size:12px;font-weight:700;color:#9a5a00}
+.dose-nx{font-size:12px;color:#a86b1a;line-height:1.5;margin-top:1px}
+
 .holo-card{margin:0 16px 12px;background:#040810;border-radius:20px;position:relative;overflow:hidden;height:330px}
 .floaty{animation:floaty 5s ease-in-out infinite}
 @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
@@ -250,6 +275,7 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
           <span class="loc-badge">户外中</span>
           <i class="ti ti-chevron-right" style="font-size:18px;color:#c7c7cc;margin-left:4px"></i>
         </div>
+
         <p class="sec-lbl"><span>今日进度</span></p>
         <div class="card ring-card" onclick="openBright()" style="cursor:pointer">
           <div class="rings-wrap">
@@ -261,9 +287,10 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
               <text x="75" y="71" text-anchor="middle" font-size="20" font-weight="700" fill="#000" font-family="Inter">85%</text>
               <text x="75" y="86" text-anchor="middle" font-size="10" fill="#8e8e93" font-family="Inter">还差 18 分钟</text>
             </svg>
-            <div class="ring-info">
-              <div><div class="ri-label"><span class="ri-dot" style="background:#ff9500"></span>日光</div><div class="ri-value">1h 42m</div><div class="ri-sub">目标 2h · <span class="ri-change">+31%</span></div></div>
-              <div><div class="ri-label"><span class="ri-dot" style="background:#34c759"></span>活动</div><div class="ri-value">2h 15m</div><div class="ri-sub">含户外 1h42m · <span class="ri-change">+15%</span></div></div>
+            <div class="ring-info" style="gap:12px">
+              <div><div class="ri-label"><span class="ri-dot" style="background:#ff9500"></span>日光</div><div class="ri-value" style="font-size:18px">1h42m</div><div class="ri-sub">目标 2h · <span class="ri-change">+31%</span></div></div>
+              <div><div class="ri-label"><span class="ri-dot" style="background:#34c759"></span>活动</div><div class="ri-value" style="font-size:18px">2h15m</div><div class="ri-sub">中高强度 48m</div></div>
+              <div onclick="event.stopPropagation();openSleep()" style="cursor:pointer"><div class="ri-label"><span class="ri-dot" style="background:#5e35b1"></span>睡眠 <i class="ti ti-chevron-right" style="font-size:12px;color:#c7c7cc;margin-left:-1px"></i></div><div class="ri-value" style="font-size:18px">9h20m</div><div class="ri-sub">入睡顺畅</div></div>
             </div>
           </div>
           <div class="divider"></div>
@@ -276,12 +303,6 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
             <div class="week-day"><div class="bar-bg"></div><span class="day-lbl">六</span></div>
             <div class="week-day"><div class="bar-bg"></div><span class="day-lbl">日</span></div>
           </div>
-        </div>
-        <div class="card" onclick="openSleep()" style="padding:13px 16px;display:flex;align-items:center;gap:12px;cursor:pointer">
-          <div style="width:38px;height:38px;border-radius:12px;background:#ede7f6;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="ti ti-moon-stars" style="font-size:19px;color:#5e35b1"></i></div>
-          <div><p style="font-size:13px;font-weight:600;color:#000">昨晚睡眠</p><p style="font-size:11px;color:#8e8e93;margin-top:1px">9h20m · 入睡顺畅</p></div>
-          <span style="margin-left:auto;background:#ede7f6;color:#5e35b1;font-size:11px;font-weight:600;padding:4px 10px;border-radius:8px">良好</span>
-          <i class="ti ti-chevron-right" style="font-size:18px;color:#c7c7cc"></i>
         </div>
         <div class="card insight">
           <div class="insight-hdr"><i class="ti ti-sparkles" style="color:#ff9500"></i><span class="insight-hdr-txt" style="color:#ff9500">AI 解读</span></div>
@@ -470,17 +491,36 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
           </div>
 
           <div style="border-top:.5px solid #f4f4f6;margin-top:14px;padding-top:14px">
-            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px"><span style="font-size:12px;font-weight:600;color:#8e8e93">近 7 天日光</span><span style="font-size:11px;font-weight:600;color:#e8820b"><i class="ti ti-flame" style="vertical-align:-1px"></i> 连续达标 4 天 · 本周 5/7</span></div>
-            <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:6px;height:60px">
-              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:88%;background:#ff9500;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">一</span></div>
-              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:62%;background:#ffd9a0;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">二</span></div>
-              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:100%;background:#ff9500;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">三</span></div>
-              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:84%;background:#ff9500;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">四</span></div>
-              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:55%;background:#ffd9a0;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">五</span></div>
-              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:94%;background:#ff9500;border-radius:5px"></div><span style="font-size:10px;color:#8e8e93">六</span></div>
-              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px"><div style="width:100%;height:85%;background:#ff7a00;border-radius:5px"></div><span style="font-size:10px;color:#e8820b;font-weight:700">今</span></div>
+            <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:14px">
+              <div style="width:42px;height:42px;border-radius:13px;background:#e8f8ee;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="ti ti-shield" style="font-size:21px;color:#1D9E75"></i></div>
+              <div style="flex:1"><p style="font-size:15px;font-weight:700;color:#000">紫外暴露</p><p style="font-size:11px;color:#8e8e93;margin-top:1px">孩子身上的真实剂量，非天气预报</p></div>
+              <p style="font-size:21px;font-weight:700;color:#1D9E75;white-space:nowrap;margin:0">22<span style="font-size:12px;color:#8e8e93;font-weight:500">分钟</span></p>
             </div>
-            <p style="font-size:11px;color:#8e8e93;margin-top:10px">本周日均 1h48m · 达标目标 2h</p>
+            <div style="background:#f6f7f9;border-radius:12px;padding:12px 13px">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:9px"><span style="font-size:12px;color:#3a3a3c;font-weight:500">今日强紫外累计</span><span style="font-size:11px;font-weight:600;color:#1D9E75;background:#e8f8ee;padding:3px 9px;border-radius:7px">安全 · 无需补涂</span></div>
+              <div style="height:8px;border-radius:4px;background:#e3e8ef;overflow:hidden"><div style="width:37%;height:100%;border-radius:4px;background:#34c759"></div></div>
+              <div style="display:flex;justify-content:space-between;font-size:10px;color:#8e8e93;margin-top:5px"><span>0</span><span>建议上限 60 分钟</span></div>
+            </div>
+            <div style="margin-top:14px">
+              <span style="font-size:12px;font-weight:600;color:#8e8e93">今日阳光时间轴</span>
+              <div style="display:flex;height:30px;border-radius:8px;overflow:hidden;gap:2px;margin-top:10px">
+                <div style="flex:2;background:#f0ece3;border-radius:3px"></div>
+                <div style="flex:1.4;background:#ffe0a3;border-radius:3px"></div>
+                <div style="flex:1;background:#f0ece3;border-radius:3px"></div>
+                <div style="flex:1.6;background:#ff9500;border-radius:3px"></div>
+                <div style="flex:1.4;background:#f3b6a0;border-radius:3px"></div>
+                <div style="flex:1.2;background:#ffe0a3;border-radius:3px"></div>
+                <div style="flex:2;background:#f0ece3;border-radius:3px"></div>
+              </div>
+              <div style="display:flex;justify-content:space-between;font-size:10px;color:#a99;margin-top:6px"><span>8AM</span><span>中午</span><span>4PM</span><span>现在</span></div>
+              <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:11px;font-size:10px;color:#8e8e93">
+                <span style="display:flex;align-items:center;gap:4px"><span style="width:9px;height:9px;border-radius:50%;background:#ffe0a3"></span>温和光(护眼)</span>
+                <span style="display:flex;align-items:center;gap:4px"><span style="width:9px;height:9px;border-radius:50%;background:#ff9500"></span>强光</span>
+                <span style="display:flex;align-items:center;gap:4px"><span style="width:9px;height:9px;border-radius:50%;background:#f3b6a0"></span>强紫外</span>
+                <span style="display:flex;align-items:center;gap:4px"><span style="width:9px;height:9px;border-radius:50%;background:#f0ece3"></span>室内</span>
+              </div>
+            </div>
+            <div style="background:#fff7e6;border-radius:12px;padding:11px 13px;margin-top:13px;font-size:12px;color:#a86b1a;line-height:1.6"><i class="ti ti-bulb" style="color:#e8820b;margin-right:4px"></i>强紫外累计接近上限时，App 内会提示给孩子补涂防晒或找阴凉处。仅作参考。</div>
           </div>
         </div>
 
@@ -741,7 +781,6 @@ function renderBody(){
 var bodyH=118.4, bodyW=22.3, tmpH=118.4, tmpW=22.3;
 function bmi(h,w){return w/((h/100)*(h/100));}
 function applyBody(){
-  // weight -> width (gentle), height -> vertical scale
   widthScale=Math.max(0.8,Math.min(1.25,0.85+(bodyW-18)/14*0.32));
   var sy=Math.max(0.9,Math.min(1.1,0.92+(bodyH-110)/40*0.18));
   var bs=document.getElementById('bodyScale');
@@ -796,7 +835,6 @@ function renderGChart(){
   var mon=['7月','','9月','','11月','','1月','','3月','','5月','本月'];
   for(var x=0;x<N;x++){if(!mon[x])continue;var tx=el('text',{x:xOf(x),y:182,'text-anchor':'middle','font-size':9,fill:x===N-1?'#007aff':'#8e8e93','font-family':'Inter','font-weight':x===N-1?'600':'400'});tx.textContent=mon[x];svg.appendChild(tx);}
 }
-function toggleHelp(){var b=document.getElementById('helpBody'),c=document.getElementById('helpChev');var open=b.style.display==='flex';b.style.display=open?'none':'flex';if(c)c.style.transform=open?'':'rotate(180deg)';}
 function openBright(){document.getElementById('brightO').classList.add('open')}
 function closeBright(){document.getElementById('brightO').classList.remove('open')}
 function openSleep(){document.getElementById('sleepO').classList.add('open')}
