@@ -287,10 +287,9 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
               <text x="75" y="71" text-anchor="middle" font-size="20" font-weight="700" fill="#000" font-family="Inter">85%</text>
               <text x="75" y="86" text-anchor="middle" font-size="10" fill="#8e8e93" font-family="Inter">还差 18 分钟</text>
             </svg>
-            <div class="ring-info" style="gap:12px">
-              <div><div class="ri-label"><span class="ri-dot" style="background:#ff9500"></span>日光</div><div class="ri-value" style="font-size:18px">1h42m</div><div class="ri-sub">目标 2h · <span class="ri-change">+31%</span></div></div>
-              <div><div class="ri-label"><span class="ri-dot" style="background:#34c759"></span>活动</div><div class="ri-value" style="font-size:18px">2h15m</div><div class="ri-sub">中高强度 48m</div></div>
-              <div onclick="event.stopPropagation();openSleep()" style="cursor:pointer"><div class="ri-label"><span class="ri-dot" style="background:#5e35b1"></span>睡眠 <i class="ti ti-chevron-right" style="font-size:12px;color:#c7c7cc;margin-left:-1px"></i></div><div class="ri-value" style="font-size:18px">9h20m</div><div class="ri-sub">入睡顺畅</div></div>
+            <div class="ring-info">
+              <div><div class="ri-label"><span class="ri-dot" style="background:#ff9500"></span>日光</div><div class="ri-value">1h 42m</div><div class="ri-sub">目标 2h · <span class="ri-change">+31%</span></div></div>
+              <div><div class="ri-label"><span class="ri-dot" style="background:#34c759"></span>活动</div><div class="ri-value">2h 15m</div><div class="ri-sub">含户外 1h42m · <span class="ri-change">+15%</span></div></div>
             </div>
           </div>
           <div class="divider"></div>
@@ -303,6 +302,12 @@ body{background:#e9e9ef;min-height:100vh;display:flex;align-items:center;justify
             <div class="week-day"><div class="bar-bg"></div><span class="day-lbl">六</span></div>
             <div class="week-day"><div class="bar-bg"></div><span class="day-lbl">日</span></div>
           </div>
+        </div>
+        <div class="card" onclick="openSleep()" style="padding:13px 16px;display:flex;align-items:center;gap:12px;cursor:pointer">
+          <div style="width:38px;height:38px;border-radius:12px;background:#ede7f6;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="ti ti-moon-stars" style="font-size:19px;color:#5e35b1"></i></div>
+          <div><p style="font-size:13px;font-weight:600;color:#000">昨晚睡眠</p><p style="font-size:11px;color:#8e8e93;margin-top:1px">9h20m · 入睡顺畅</p></div>
+          <span style="margin-left:auto;background:#ede7f6;color:#5e35b1;font-size:11px;font-weight:600;padding:4px 10px;border-radius:8px">良好</span>
+          <i class="ti ti-chevron-right" style="font-size:18px;color:#c7c7cc"></i>
         </div>
         <div class="card insight">
           <div class="insight-hdr"><i class="ti ti-sparkles" style="color:#ff9500"></i><span class="insight-hdr-txt" style="color:#ff9500">AI 解读</span></div>
